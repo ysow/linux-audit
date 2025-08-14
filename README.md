@@ -19,8 +19,9 @@ Configurer un serveur web sécurisé avec Nginx, HTTPS et sauvegarde automatisé
 # Créer utilisateur
 sudo adduser devops
 sudo usermod -aG sudo devops
-
+```
 ### 3. Sécurisation SSH
+```bash
 # Sauvegarde de la config
 sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
 
@@ -32,3 +33,4 @@ sudo nano /etc/ssh/sshd_config
 # PermitRootLogin no
 
 sudo systemctl restart ssh
+```
